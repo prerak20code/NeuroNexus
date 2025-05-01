@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Survey</title>
+    <link rel="stylesheet" href="index1.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-header">
+            <h1 class="form-title">Contact Information Form</h1>
+            <p class="form-description">Please fill out this form with your contact details.</p>
+            <p class="required-notice">* Required</p>
+        </div>
+
+        <form>
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="fullName" class="form-label required">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="contactNumber" class="form-label required">Contact Number</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="address" class="form-label required">Address</label>
+                    <textarea id="address" name="address" class="form-textarea" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="companyName" class="form-label required">Company Name</label>
+                    <input type="text" id="companyName" name="companyName" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="email" class="form-label required">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label for="department" class="form-label required">Department</label>
+                    <select id="department" name="department" class="form-select" required>
+                        <option value="" disabled selected>Choose</option>
+                        <option value="HR">HR</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Development">Development</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Others">Others</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <div class="form-group">
+                    <label class="form-label required">Gender</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="Male" class="radio-input" required>
+                            <label for="male" class="radio-label">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="Female" class="radio-input">
+                            <label for="female" class="radio-label">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="preferNotToSay" name="gender" value="Prefer not to say" class="radio-input">
+                            <label for="preferNotToSay" class="radio-label">Prefer not to say</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit-container">
+                <span class="required-text">* Required</span>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
